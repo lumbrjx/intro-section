@@ -1,0 +1,22 @@
+{
+  "name": "intro-section",
+  "version": "1.0.0",
+  "description": "simple intro section",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CLOG9/intro-section.git"
+  },
+  "author": "CLOG9",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CLOG9/intro-section/issues"
+  },
+  "homepage": "https://github.com/CLOG9/intro-section#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha3"
+  }
+}
