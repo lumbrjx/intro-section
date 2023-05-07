@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CLOG9/intro-section#readme",
   "dependencies": {
-    "bootstrap": "^5.3.0-alpha3"
+    "bootstrap": "^5.3.0-alpha3",
+    "bootstrap-icons": "^1.10.5"
   }
 }
