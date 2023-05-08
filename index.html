@@ -21,17 +21,84 @@
   </head>
   <body>
     <!-- Features Company Careers About Login Register Make remote work Get your team
-    in sync, no matter your location. Streamline processes, create team rituals,
-    and watch productivity soar. Learn more -->
-    <nav class="navbar navbar-lg navbar-almostBlack">
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold fs-1">snap</a>
+      in sync, no matter your location. Streamline processes, create team rituals,
+      and watch productivity soar. Learn more -->
 
-        <button class="btn" title="menu">
-          <img src="./images/icon-menu.svg" alt="open-menu" />
+    <nav class="navbar navbar-expand-lg navbar-light px-3" id="navnav">
+      <a class="navbar-brand fw-bold fs-1">snap</a>
+      <!-- <button
+        class="navbar-toggler position-relative"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <button
+        class="navbar-toggler border-0"
+        title="Toggle"
+        data-bs-toggle="offcanvas"
+        href="#offcanvasExample"
+        role="button"
+        aria-controls="offcanvasExample"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end collapse"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <div></div>
+          <button
+            type="button"
+            class="btn-close me-2 mt-1"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body">
+          
+          
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              Right
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+              <li><button class="dropdown-item" type="button">Action</button></li>
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
+            </ul>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="navbar-collapse collapse justify-content-end bg-primary z-3"
+        id="navbarNav"
+      >
+      <div class="dropdown-center">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Centered dropdown
         </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Action two</a></li>
+          <li><a class="dropdown-item" href="#">Action three</a></li>
+        </ul>
+      </div>
       </div>
     </nav>
+
+    
     <div>
       <img
         src="./images/image-hero-mobile.png"
@@ -62,7 +129,9 @@
       />
       <img class="myNewImg" src="./images/client-meet.svg" alt="meet" />
       <img class="myNewImg" src="./images/client-maker.svg" alt="maker" />
-    </div>
+    </div> 
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>
