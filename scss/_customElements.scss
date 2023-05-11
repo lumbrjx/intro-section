@@ -1,12 +1,55 @@
+*, *::before, *::after {
+  box-sizing:content-box; 
+}
 body {
   width: 100vw;
   overflow-x: hidden;
 }
 .myNewImg {
-  height: 15px;
+  height: 20px;
 }
 #myNewBtn {
   font-size: 16px;
+}
+.accordion.accordion-flush{
+  --bs-accordion-border-color: transparent;
+  --bs-accordion-btn-padding-x: 0rem;
+}
+.accordion-button.collapsed{
+  color: hsl(0, 0%, 41%);
+}
+.accordion-button {
+  gap: 1rem;
+}
+.accordion-button.collapsed::after , .accordion-button:not(.collapsed):after{
+  
+  width: 0.8rem;
+  height: 0.8rem;
+  background-size: contain;
+  
+}
+#panel{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: stretch;
+}
+#offcanvasExample{
+  width: 250px;
+}
+a{
+  cursor: pointer;
+}
+#buttonThehover:focus{
+  border-color: transparent;
+  box-shadow:   0 0 0 0rem rgba(0, 0, 0, 0);
+}
+#buttonThehover:not(.collapsed) {
+  
+  background-color: transparent;
+  
+}
+#loginbtn{
+  color: hsl(0, 0%, 41%);
 }
 // .navbar-toggler {
 //   z-index: 999;
