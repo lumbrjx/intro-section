@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
@@ -44,6 +44,7 @@
         href="#offcanvasExample"
         role="button"
         aria-controls="offcanvasExample"
+        id="buttonThehover"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -61,21 +62,50 @@
             class="btn-close me-2 mt-1"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
+            id="buttonThehover"
           ></button>
         </div>
 
-        <div class="offcanvas-body">
+        <div class="offcanvas-body ps-3 d-flex flex-column align-items-start gap-4">
           
           
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-              Right
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-              <li><button class="dropdown-item" type="button">Action</button></li>
-              <li><button class="dropdown-item" type="button">Another action</button></li>
-              <li><button class="dropdown-item" type="button">Something else here</button></li>
-            </ul>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" id="buttonThehover" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Features
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body d-flex flex-column gap-3">
+                  <div id="panel"><img class="myNewImg" src="./images/icon-todo.svg" alt="todo">         <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0  link-mediumGray href="#hhh">Todo List</a></div> 
+                  <div id="panel"><img class="myNewImg"src="./images/icon-calendar.svg" alt="calendar">  <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0  link-mediumGray href="#hhh">calendar</a></div>
+                  <div id="panel"><img class="myNewImg"src="./images/icon-reminders.svg" alt="reminders"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0  link-mediumGray href="#hhh">Reminders</a></div>
+                  <div id="panel"><img class="myNewImg"src="./images/icon-planning.svg" alt="planning">  <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0  link-mediumGray href="#hhh">planning</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button  collapsed " id="buttonThehover" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Company
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body d-flex flex-column gap-3" >
+                  <a class="link-offset-2 link-offset-3-hover link-underline-opacity-0  link-mediumGray"  href="#null">History</a>
+                  <a class="link-offset-2 link-offset-3-hover link-underline-opacity-0  link-mediumGray" href="#null">Our team</a>
+                  <a class="link-offset-2 link-offset-3-hover link-underline-opacity-0  link-mediumGray" href="#null">Blog</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0  link-mediumGray" href="#carrer">Careers</a>
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0  link-mediumGray href="#About">About</a>
+          <div class="container-fluid d-flex flex-column  p-0 gap-1" >
+            <button type="button" class="btn   btn-outline-0 p-2 " id="loginbtn" >Login</button>
+            <button type="button" class="btn btn-outline-mediumGray p-2" >Register</button>
           </div>
         </div>
           </div>
@@ -85,17 +115,7 @@
         class="navbar-collapse collapse justify-content-end bg-primary z-3"
         id="navbarNav"
       >
-      <div class="dropdown-center">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Centered dropdown
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Action two</a></li>
-          <li><a class="dropdown-item" href="#">Action three</a></li>
-        </ul>
-      </div>
-      </div>
+      
     </nav>
 
     
@@ -109,7 +129,7 @@
     <div
       class="container-fluid d-flex flex-column align-items-center justify-content-center"
     >
-      <p class="navbar-brand fw-bold fs-1 mt-5 text-center">
+      <p class="navbar-brand fw-bold fs-1 mt-5 text-center text-wrap">
         Make remote work
       </p>
       <p class="text-center text-wrap text-mediumGray">
