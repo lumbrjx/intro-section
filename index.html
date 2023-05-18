@@ -25,7 +25,7 @@
       and watch productivity soar. Learn more -->
 
     <nav class="navbar navbar-expand-lg navbar-light px-3" id="navnav">
-      <a class="navbar-brand fw-bold fs-1">snap</a>
+      <a class="navbar-brand fw-bold fs-1 ms-5">snap</a>
       <!-- <button
         class="navbar-toggler position-relative"
         type="button"
@@ -62,7 +62,7 @@
             class="btn-close me-2 mt-1"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
-            id="buttonThehover"
+            id="buttonThehover1"
           ></button>
         </div>
 
@@ -72,7 +72,7 @@
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" id="buttonThehover" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <button class="accordion-button collapsed" id="buttonThehover2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   Features
                 </button>
               </h2>
@@ -87,7 +87,7 @@
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button  collapsed " id="buttonThehover" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <button class="accordion-button  collapsed " id="buttonThehover3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   Company
                 </button>
               </h2>
@@ -112,44 +112,88 @@
         </div>
       </div>
       <div
-        class="navbar-collapse collapse justify-content-end bg-primary z-3"
-        id="navbarNav"
-      >
+        class="navbar-collapse collapse justify-content-between  px-5 z-3"
+        id="navbarNav">
+        <div class="d-flex gap-3">
+          <div class="dropdown" >
+            <a class="btn btn-secondary dropdown-toggle" id="toogg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Features
+            </a>
+          
+            <ul class="dropdown-menu ps-2">
+              <li><div id="panel"><img class="myNewImg" src="./images/icon-todo.svg" alt="todo"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0  link-mediumGray href="#hhh">Todo List</a></div></li> 
+              <li><div id="panel"><img class="myNewImg"src="./images/icon-calendar.svg" alt="calendar">  <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0  link-mediumGray href="#hhh">calendar</a></div></li>
+              <li><div id="panel"><img class="myNewImg"src="./images/icon-reminders.svg" alt="reminders"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0  link-mediumGray href="#hhh">Reminders</a></div></li>
+              <li><div id="panel"><img class="myNewImg"src="./images/icon-planning.svg" alt="planning">  <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0  link-mediumGray href="#hhh">planning</a></div></li></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" id="toogg1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Comapny
+            </a>
+          
+            <ul class="dropdown-menu ps-2">
+              <li><a class="link-offset-2 link-offset-3-hover link-underline-opacity-0  link-mediumGray"  href="#null">History</a></li>
+              <li><a class="link-offset-2 link-offset-3-hover link-underline-opacity-0  link-mediumGray" href="#null">Our team</a></li>
+              <li><a class="link-offset-2 link-offset-3-hover link-underline-opacity-0  link-mediumGray" href="#null">Blog</a></li>
+            </ul>
+          </div>
+          <a href="#hhh" class="link-offset-2 link-offset-3-hover link-underline-opacity-0  link-mediumGray mt-2">Careers</a>
+          <a href="#hhh" class="link-offset-2 link-offset-3-hover link-underline-opacity-0  link-mediumGray mt-2">About</a>
+        </div>
+        <div class="d-flex gap-4">
+          
+          <button type="button" class="btn   btn-outline-0 p-2 " id="loginbtn1" >Login</button>
+          <button type="button" class="btn btn-outline-mediumGray p-2" >Register</button>
+          
+        </div>
+      </div>
       
     </nav>
 
-    
-    <div>
-      <img
-        src="./images/image-hero-mobile.png"
-        class="img-fluid"
-        alt="hero-mobile"
-      />
+    <div class="d-lg-flex flex-row-reverse justify-content-start">
+
+      <div class="container w-100 d-flex justify-content-center pt-3 pb-3 mb-5" id="heroCont">
+        <img
+            src="./images/image-hero-mobile.png"
+            class="img-fluid"
+            alt="hero-mobile"
+            id="heroImg"
+          />
+        </img>
+
+      </div>
+      <div class="container d-lg-flex flex-column justify-content-between">
+
+        <div
+          class="container-fluid d-flex flex-column  align-items-center  gap-4 ps-4" id="fontCon"
+        >
+          <p class="navbar-brand fw-bold  mt-5  text-wrap lh-1  " id="picous">
+           Make remote work 
+          </p>
+          <p class=" text-wrap text-mediumGray " id="hexus">
+            Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <div class=" d-lg-flex justify-content-lg-start" id="theBtnDiv">
+            <button id="myNewBtn" class="btn btn-almostBlack rounded-3">
+              Learn more
+            </button>
+
+          </div>
+        </div>
+        <div class="my-5 d-flex justify-content-around" >
+          <img class="myNewImg" src="./images/client-databiz.svg" alt="databiz" />
+          <img
+            class="myNewImg"
+            src="./images/client-audiophile.svg"
+            alt="audiophile"
+          />
+          <img class="myNewImg" src="./images/client-meet.svg" alt="meet" />
+          <img class="myNewImg" src="./images/client-maker.svg" alt="maker" />
+        </div> 
+      </div>
     </div>
-    <div
-      class="container-fluid d-flex flex-column align-items-center justify-content-center"
-    >
-      <p class="navbar-brand fw-bold fs-1 mt-5 text-center text-wrap">
-        Make remote work
-      </p>
-      <p class="text-center text-wrap text-mediumGray">
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
-      </p>
-      <button id="myNewBtn" class="btn btn-almostBlack rounded-3">
-        Learn more
-      </button>
-    </div>
-    <div class="my-5 d-flex justify-content-around">
-      <img class="myNewImg" src="./images/client-databiz.svg" alt="databiz" />
-      <img
-        class="myNewImg"
-        src="./images/client-audiophile.svg"
-        alt="audiophile"
-      />
-      <img class="myNewImg" src="./images/client-meet.svg" alt="meet" />
-      <img class="myNewImg" src="./images/client-maker.svg" alt="maker" />
-    </div> 
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./src/index.js"></script>

@@ -1,6 +1,4 @@
-*, *::before, *::after {
-  box-sizing:content-box; 
-}
+
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -10,6 +8,10 @@ body {
 }
 #myNewBtn {
   font-size: 16px;
+}
+#myNewBtn:hover{
+  background-color: transparent;
+  color: black;
 }
 .accordion.accordion-flush{
   --bs-accordion-border-color: transparent;
@@ -39,26 +41,64 @@ body {
 a{
   cursor: pointer;
 }
-#buttonThehover:focus{
+#buttonThehover:focus , #buttonThehover1:focus ,#buttonThehover2:focus,#buttonThehover3:focus{
   border-color: transparent;
   box-shadow:   0 0 0 0rem rgba(0, 0, 0, 0);
 }
-#buttonThehover:not(.collapsed) {
+#buttonThehover:not(.collapsed),#buttonThehover1:not(.collapsed),#buttonThehover2:not(.collapsed),#buttonThehover3:not(.collapsed) {
   
   background-color: transparent;
   
 }
-#loginbtn{
+#loginbtn,#loginbtn1{
   color: hsl(0, 0%, 41%);
 }
-// .navbar-toggler {
-//   z-index: 999;
-// }
-// #navbarNav {
-//   margin-left: 160px;
-// }
-// #navnav {
-//   width: 100%;
-//   display: flex;
-//   flex-direction: row;
-// }
+#picous{
+  font-size: 32px;
+  text-align: center;
+}
+#hexus{
+  text-align: center;
+}
+
+@media(min-width:450px){
+  
+  #hexus{
+    font-size: 16px;
+  }
+  span{
+    height: 60px;
+    
+  }
+  // #fontCon{
+  //   height: 60%;
+  // }
+}
+@media(min-width:750px){
+  #heroImg{
+    content: url("../images/image-hero-desktop.png");
+    background-size: cover;
+    height:500px;
+  }
+
+}
+@media(min-width:990px){
+  #picous{
+    font-size: 68px;
+    text-align: left;
+    width: 82% 
+  }
+  #hexus{
+    text-align: left;
+    width: 82%
+  }
+  #theBtnDiv{
+    width: 82%;
+  }
+ 
+}
+#toogg,#toogg1{
+  background-color: transparent;
+  border-color: transparent;
+  color: hsl(0, 0%, 41%); 
+}
