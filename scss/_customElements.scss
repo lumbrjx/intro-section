@@ -1,4 +1,3 @@
-
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -28,7 +27,6 @@ body {
   width: 0.8rem;
   height: 0.8rem;
   background-size: contain;
-  
 }
 #panel{
   display: flex;
@@ -45,10 +43,8 @@ a{
   border-color: transparent;
   box-shadow:   0 0 0 0rem rgba(0, 0, 0, 0);
 }
-#buttonThehover:not(.collapsed),#buttonThehover1:not(.collapsed),#buttonThehover2:not(.collapsed),#buttonThehover3:not(.collapsed) {
-  
+#buttonThehover:not(.collapsed),#buttonThehover1:not(.collapsed),#buttonThehover2:not(.collapsed),#buttonThehover3:not(.collapsed) { 
   background-color: transparent;
-  
 }
 #loginbtn,#loginbtn1{
   color: hsl(0, 0%, 41%);
@@ -60,19 +56,13 @@ a{
 #hexus{
   text-align: center;
 }
-
 @media(min-width:450px){
-  
   #hexus{
     font-size: 16px;
   }
   span{
-    height: 60px;
-    
+    height: 60px; 
   }
-  // #fontCon{
-  //   height: 60%;
-  // }
 }
 @media(min-width:750px){
   #heroImg{
@@ -80,7 +70,6 @@ a{
     background-size: cover;
     height:500px;
   }
-
 }
 @media(min-width:990px){
   #picous{
@@ -95,7 +84,6 @@ a{
   #theBtnDiv{
     width: 82%;
   }
- 
 }
 #toogg,#toogg1{
   background-color: transparent;
